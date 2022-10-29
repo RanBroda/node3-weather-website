@@ -17,7 +17,7 @@ const forecast = (latitude, longitude, callback) => {
                 dayOrNight = " and it's a night time"
             }
             callback(undefined, 'It is currently ' + body.current.weather_descriptions[0] + '. It feels like ' + body.current.feelslike + ' degress outside.\n The current humidity is '  + body.current.humidity
-            + dayOrNight)
+            + '%' + dayOrNight)
     
         }
     })
